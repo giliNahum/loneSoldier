@@ -1,0 +1,7 @@
+.HouseEnd-content {
+    display: flex;
+    justify-content: center;
+    height: 24rem;
+    margin-top: 4rem;
+    gap: 2rem;
+}

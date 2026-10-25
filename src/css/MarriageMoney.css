@@ -1,0 +1,37 @@
+.MarriageMoney-text {
+    font-size: 1.5rem;
+    color: #032057;
+    max-width: 80%;
+    white-space: normal;
+    margin-inline: auto;
+    margin-top: 1.5rem;
+}
+
+.MarriageMoney-envelopes {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: flex-start;
+    margin: 2rem 0rem;
+}
+
+.MarriageMoney-envelope {
+    height: 10rem;
+}
+
+.MarriageMoney-envelope-text {
+    color: #032057;
+}
+
+.MarriageMoney-envelope2 {
+    cursor: pointer;
+    transition: transform 0.25s ease;
+}
+
+.MarriageMoney-safe {
+    width: 22rem;
+}
+
+.MarriageMoney-envelope2:hover {
+    transform: scale(1.05);
+}

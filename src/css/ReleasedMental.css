@@ -1,0 +1,33 @@
+.ReleasedMental-note-instruction {
+    color: #032057;
+}
+
+.ReleasedMental-desk {
+    cursor: pointer;
+    margin-top: 1.5rem;
+    width: 28rem;
+}
+
+.ReleasedMental-note {
+    cursor: pointer;
+}
+
+.ReleasedMental-note {
+    position: relative;
+    bottom: 25rem;
+    left: 25rem
+}
+
+.ReleasedMental-note-img {
+    margin-top: 0.5rem;
+    width: 10rem;
+}
+
+@media (max-width: 950px) {
+    .ReleasedMental-note {
+        position: relative;
+        bottom: 25rem;
+        left: 20rem
+    }
+    
+}

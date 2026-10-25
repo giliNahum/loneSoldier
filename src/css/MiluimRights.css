@@ -1,0 +1,53 @@
+.MiluimRights-click-area {
+    cursor: pointer;
+}
+
+.MiluimRights-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MiluimRights-close {
+    position: absolute;
+    top: 8rem;
+    right: 
+    1rem;
+
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #F0F0C9;
+
+    font-family: "yarden-bold";
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1;
+
+    cursor: pointer;
+    transition: transform 0.25s ease;
+}
+
+.MiluimRights-close:hover {
+    transform: scale(1.15);
+}
+
+.MiluimRights-close:active {
+    transform: scale(0.98);
+}
+
+.MiluimRightsSvg {
+    height: 35rem;
+    margin-top: 0.5rem;
+}
+
+.MiluimRights-selected-item {
+    position: relative;
+}
+
+.MiluimRights-selected-item-img {
+    max-width: 40rem;
+    max-height: 80vh;
+
+    object-fit: contain;
+}

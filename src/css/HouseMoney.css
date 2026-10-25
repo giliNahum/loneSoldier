@@ -1,0 +1,48 @@
+.HouseMoney-pillow-container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: 3rem;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.title-HouseMoney {
+    -webkit-text-stroke: 1px #000000;
+    background-image: url(../assets/images/sofa.png);
+    background-size: 100% 100%;
+    width: 22rem;
+    padding: 4rem 1rem 3rem 1rem;
+    line-height: 1;
+    margin-inline: auto;
+    margin-top: 4rem;
+}
+
+.HouseMoney-pillow-blue {
+    background-image: url(../assets/images/pillow-blue.svg);
+    font-size: 1.5rem;
+    padding: 2.5rem 1.1rem;
+    width: 16rem;
+    height: 16rem;
+    background-size: 100% 100%;
+    margin: 0rem -1rem;
+}
+.HouseMoney-pillow-white {
+    background-image: url(../assets/images/pillow-white.svg);
+    font-size: 1.5rem;
+    padding: 3rem 1.2rem;
+    width: 13rem;
+    height: 13rem;
+    background-size: 100% 100%;
+    color: #011760;
+    margin: 0rem;
+    z-index: 1;
+}
+
+.HouseMoney-pillow-blue strong {
+    font-family: "yarden-bold";
+}
+
+.HouseMoney-pillow-white strong {
+    font-family: "yarden-bold";
+}

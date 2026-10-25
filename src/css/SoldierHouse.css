@@ -1,0 +1,32 @@
+.SoldierHouse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.soldier-house-content {
+    color: #502009;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+
+.soldier-house-juice {
+    background-image: url("../assets/images/soldier-house-juice.png");
+    background-size: 100% 100%;
+    width: 11rem;
+    padding: 7rem 2rem 5rem;
+}
+
+.soldier-house-bowl {
+    background-image: url("../assets/images/soldier-house-bowl.svg");
+    background-size: 100% 100%;
+    width: 33rem;
+    padding: 7rem 3rem 5rem;
+}
+
+.soldier-house-bowl p {
+    margin-top: 0.5rem;
+}

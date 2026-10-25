@@ -1,0 +1,268 @@
+/* =========================
+     תוכן המשחק
+  ========================= */
+
+.ApplicationRetro-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 4vw;
+
+    width: 85%;
+    margin: 2rem auto 0;
+}
+
+
+/* =========================
+     המדפים
+  ========================= */
+
+.ApplicationRetro-shelves {
+    position: relative;
+
+    width: 30rem;
+    /* max-width: 689px; */
+}
+
+.ApplicationRetro-shelves-img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    user-select: none;
+    pointer-events: none;
+}
+
+
+/* =========================
+     אזורי Drop
+  ========================= */
+
+.Retro-drop-zone {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    direction: rtl;
+    text-align: center;
+    cursor: pointer;
+
+    color: #023f0e;
+
+    border-radius: 5px;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+        
+}
+
+
+/* אחרי תשובה נכונה */
+
+.Retro-drop-zone.filled {
+    font-size: 1.5rem;
+    color: #F0F0C9;
+}
+
+
+/* =========================
+     מיקומי התאים
+  ========================= */
+
+/*
+    המספרים האלה הם באחוזים כדי
+    שהמיקומים יישארו במקום גם
+    כשהתמונה משתנה בגודל.
+  */
+
+/* עמודה שמאלית */
+.Retro-slot-1 {
+    left: 6%;
+    top: 25%;
+    width: 26%;
+    height: 14%;
+}
+
+.Retro-slot-3 {
+    left: 6%;
+    top: 45%;
+    width: 26%;
+    height: 14%;
+}
+
+.Retro-slot-5 {
+    left: 6%;
+    top: 64%;
+    width: 26%;
+    height: 14%;
+}
+
+.Retro-slot-7 {
+    left: 6%;
+    top: 83%;;
+    width: 26%;
+    height: 11%;
+}
+
+
+/* עמודה אמצעית */
+.Retro-slot-2 {
+    left: 36%;
+    top: 25%;
+    width: 26%;
+    height: 14%;
+}
+
+.Retro-slot-4 {
+    left: 36%;
+    top: 45%;
+    width: 26%;
+    height: 14%;
+}
+
+.Retro-slot-6 {
+    left: 36%;
+    top: 64%;
+    width: 26%;
+    height: 14%;
+}
+
+.Retro-slot-8 {
+    left: 36%;
+    top: 83%;
+    width: 26%;
+    height: 11%;
+}
+
+
+/* =========================
+     תשובה שגויה
+  ========================= */
+
+.Retro-drop-zone.wrong {
+    animation: RetroWrongAnswer 0.4s ease;
+}
+
+@keyframes RetroWrongAnswer {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-7px);
+    }
+
+    50% {
+        transform: translateX(7px);
+    }
+
+    75% {
+        transform: translateX(-4px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+/* =========================
+     מחסן מילים
+  ========================= */
+
+.Retro-word-bank {
+    width: 30%;
+    max-width: 330px;
+
+    background-color: #8dbc87;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.Retro-word-bank-title {
+    margin: 0;
+
+    padding: 0.8rem;
+
+    background-color: #023f0e;
+    color: #f0f0c9;
+
+    text-align: center;
+
+    font-size: clamp(1rem, 1.5vw, 1.6rem);
+}
+
+.Retro-word-bank-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 0.8rem;
+
+    padding: 1.2rem;
+}
+
+
+/* =========================
+     מילה נגררת
+  ========================= */
+
+.Retro-word {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 2.5rem;
+
+    padding: 0.4rem 0.6rem;
+
+    background-color: #f0f0c9;
+
+    border-radius: 5px;
+
+    color: #023f0e;
+
+    direction: rtl;
+    text-align: center;
+
+    font-weight: 600;
+    font-size: clamp(0.65rem, 1vw, 1rem);
+
+    cursor: grab;
+
+    user-select: none;
+
+    touch-action: manipulation;
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.Retro-word:hover {
+    transform: scale(1.04);
+}
+
+.Retro-word:active {
+    cursor: grabbing;
+    opacity: 0.7;
+}
+
+.Retro-word.wrong {
+    background-color: #e98080;
+}
+
+.Retro-word.selected {
+    background-color: #023f0e;
+    color: #f0f0c9;
+
+    transform: scale(1.04);
+}

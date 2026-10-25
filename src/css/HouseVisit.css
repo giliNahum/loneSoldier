@@ -1,0 +1,85 @@
+.HouseVisit-text {
+    display: block;
+  width: 90%;
+  max-width: 50rem;
+  margin: 1.5rem auto;
+
+  font-size: 1.5rem;
+  line-height: 1.3;
+  color: #502009;
+  text-align: center;
+  direction: rtl;
+  white-space: normal;
+}
+
+.HouseVisit-img {
+    width: 30rem;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+}
+
+.HouseVisit-img:hover {
+    transform: scale(1.02);
+}
+
+.HouseVisit-img:active {
+    transform: scale(0.97);
+}
+
+.HouseVisit-instruction {
+    color: #502009;
+    font-size: 1.3rem;
+}
+
+.HouseVisit-popup {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    z-index: 5;
+    background-color: #FBF7F3;
+    color: #502009;
+    border-radius: 8px;
+    padding: 2rem 2rem 6rem;
+    max-width: 31rem;
+    font-size: 1.7rem;
+}
+
+.HouseVisit-popup ul {
+    font-size: 1.5rem;
+    padding: 1rem 3rem 0rem 0.5rem;
+    text-align: right;
+}
+
+.ktzina-HouseVisit {
+    width: 3.5rem;
+    position: absolute;
+    bottom: 0.2rem;
+    right: 0.8rem;
+}
+
+.HouseVisit-popup-close {
+    position: absolute;
+    top: 0rem;
+    right: 1rem;
+
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #5c2106;
+
+    font-family: inherit;
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1;
+
+    cursor: pointer;
+    transition: transform 0.25s ease;
+}
+
+.HouseVisit-popup-close:hover {
+    transform: scale(1.15);
+}
+.HouseVisit-popup-close:active {
+    transform: scale(0.98);
+}

@@ -1,0 +1,48 @@
+.application-instruction {
+    margin: 1rem 0 0;
+    font-size: 1.2rem;
+}
+
+.ApplicationHow-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 3rem;
+    margin-top: 3rem;
+    max-width: 95%;
+    white-space: normal;
+    margin-inline: auto;
+}
+
+.ApplicationHow-computer-container {
+    position: relative;
+}
+
+.Applications-computer {
+    display: block;
+    width: 100%;
+}
+
+.ApplicationHow-computer-text {
+    position: absolute;
+
+    /* תכווני לפי ה-SVG של המחשב שלך */
+    top: 11%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 80%;
+
+    margin: 0;
+
+    color: #f0f0c9;
+    text-align: center;
+    direction: rtl;
+
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+.ApplicationDesk-click-area {
+    cursor: pointer;
+}

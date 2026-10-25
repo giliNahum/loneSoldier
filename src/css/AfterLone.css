@@ -1,0 +1,182 @@
+.AfterLone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* אזור הכלים */
+
+.after-lone-tools-wrapper {
+    position: relative;
+    width: 22rem;
+    margin-top: 0.2rem;
+}
+
+.after-lone-tools-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+    user-select: none;
+}
+
+.after-lone-tool-button {
+    position: absolute;
+    top: 5%;
+    height: 92%;
+    width: 21%;
+
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    z-index: 3;
+}
+
+/* הכלי הימני – שלב 1 */
+
+.after-lone-tool--1 {
+    left: 64%;
+}
+
+/* הכלי השני מימין – שלב 2 */
+
+.after-lone-tool--2 {
+    left: 47%;
+}
+
+/* הכלי השלישי מימין – שלב 3 */
+
+.after-lone-tool--3 {
+    left: 28%;
+}
+
+/* הכלי השמאלי – שלב 4 */
+
+.after-lone-tool--4 {
+    left: 10%;
+}
+
+.after-lone-tool-button:hover {
+    background-color: rgba(255, 255, 255, 0.288);
+    border-radius: 1rem;
+}
+
+.after-lone-tool-button:focus-visible {
+    outline: 0.15rem solid #54220c;
+    outline-offset: 0.1rem;
+    border-radius: 1rem;
+}
+
+/* המספרים */
+
+.after-lone-step-number {
+    position: absolute;
+    top: 68%;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 2rem;
+    height: 2rem;
+
+    color: #3a281c;
+    font-family: "yarden-bold";
+    font-size: 1.8rem;
+
+    pointer-events: none;
+    text-shadow:
+        0 0 0.18rem #ffffff,
+        0.08rem 0.08rem 0.18rem #dbcdc7,
+        -0.08rem -0.08rem 0.18rem #f3d6ca;
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease,
+        text-shadow 0.2s ease;
+}
+
+.after-lone-number--1 {
+    left: 70%;
+}
+
+.after-lone-number--2 {
+    left: 54%;
+}
+
+.after-lone-number--3 {
+    left: 34.5%;
+}
+
+.after-lone-number--4 {
+    left: 15.5%;
+}
+
+.after-lone-step-number--visited {
+    color: #945111;
+    text-shadow:
+        0 0 0.18rem #ffffff,
+        0.08rem 0.08rem 0.18rem #dbcdc7,
+        -0.08rem -0.08rem 0.18rem #f3d6ca;
+}
+
+.after-lone-step-number--active {
+    color: #ffffff;
+    transform: scale(1.18);
+    text-shadow:
+        0 0 0.18rem #54220c,
+        0.08rem 0.08rem 0.18rem #54220c,
+        -0.08rem -0.08rem 0.18rem #54220c;
+}
+
+/* הסיר */
+
+.after-lone-pot-wrapper {
+    position: relative;
+    width: 34rem;
+    margin-top: 0.7rem;
+}
+
+.after-lone-pot-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+    user-select: none;
+}
+
+.after-lone-pot-text {
+    position: absolute;
+    top: 38%;
+    left: 12.5%;
+
+    width: 75%;
+    height: 43%;
+
+    box-sizing: border-box;
+    padding: 0.4rem 0.8rem;
+
+    color: #4b230e;
+    font-size: 1.4rem;
+    line-height: 1.25;
+    text-align: center;
+
+    animation: after-lone-text-enter 0.3s ease;
+}
+
+.after-lone-pot-text strong {
+    font-family: "yarden-bold";
+}
+
+@keyframes after-lone-text-enter {
+    from {
+        opacity: 0;
+        transform: translateY(0.4rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

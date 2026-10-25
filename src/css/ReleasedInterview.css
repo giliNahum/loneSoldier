@@ -1,0 +1,16 @@
+.Released-couch {
+    width: 55rem;
+    margin-top: 6rem;
+}
+
+.ReleasedInterview-text {
+    color: #032057;
+    background-color: #AAC6FD;
+    width: 45rem;
+    padding: 1rem;
+    font-size: 1.4rem;
+    border-radius: 8px;
+    white-space: normal;
+    margin-inline: auto;
+    margin-top: 4rem;
+}

@@ -1,0 +1,109 @@
+html,
+body {
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    /* חשוב מאוד! */
+    Font-size: calc(1vh + 0.5vw);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.app {
+    height: 100vh;
+    width: 100vw;
+    transition: background-color 0.4s ease;
+    font-family: "yarden";
+    color: #F0F0C9;
+    font-size: 1.1rem;
+}
+
+
+
+.bahad11 {
+    height: 5rem;
+}
+
+.til {
+    height: 4.5rem;
+}
+
+.symbols {
+    position: absolute;
+    z-index: 10;
+    top: 0.5rem;
+    left: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    direction: ltr;
+}
+
+h1 {
+    font-family: "yarden-bold";
+}
+
+.boldText {
+    font-family: "yarden-bold";
+}
+
+.title {
+    font-size: 3rem;
+    margin-top: 5rem;
+    max-width: 95%;
+    white-space: normal;
+    margin-inline: auto;
+}
+
+@media (max-width: 1200px) {
+    .title {
+        max-width: 80%;
+    }
+    
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.blur-background {
+    background-color: #0000004D;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    z-index: 3;
+}
+
+strong {
+    font-family: "yarden-bold";
+}
+
+
+@font-face {
+    font-family: yarden;
+    src: url('/src/assets/fonts/yarden/yarden-regular-alefalefalef.otf');
+}
+
+@font-face {
+    font-family: yarden-bold;
+    src: url('/src/assets/fonts/yarden/yarden-bold-alefalefalef.otf');
+}

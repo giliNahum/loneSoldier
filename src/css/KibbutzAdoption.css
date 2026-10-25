@@ -1,0 +1,27 @@
+.KibbutzAdoption-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.KibbutzAdoption-card {
+    width: 23rem;
+    height: 30rem;
+    background-color: #F0F0C9;
+    color: #502009;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border-radius: 6px;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+}
+
+.KibbutzAdoption-card-header-image {
+    width: 10rem;
+    margin-bottom: 0.5rem;
+}

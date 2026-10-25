@@ -1,0 +1,33 @@
+.AfterHul-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    width: fit-content;
+    margin-inline: auto;
+    gap: 6rem;
+}
+
+.AfterHul-books-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.AfterHul-book {
+    display: block;
+    width: auto;
+    height: 16rem;
+    object-fit: contain;
+    transition: transform 0.25s ease;
+}
+
+.AfterHul-book:hover {
+    transform: scale(1.05);
+}
+
+@media (max-height: 690px) {
+    .AfterHul-book {
+        height: 13rem;
+    }
+}

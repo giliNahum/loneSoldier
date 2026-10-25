@@ -1,0 +1,66 @@
+
+.CancelHouse-content {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: 3rem;
+    gap: 3rem;
+}
+
+.CancelHouse-note {
+    color: #502009;
+    margin-top: 1rem;
+}
+
+.cancelHouseBook {
+    width: 23rem;
+    align-self: center;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+}
+
+.cancelHouseBook:hover {
+    transform: scale(1.05);
+}
+.cancelHouseBook:active {
+    transform: scale(0.98);
+}
+
+
+.bubble-CancelHouse0 {
+    font-size: 1.5rem;
+    padding: 1rem 2rem 1.5rem 0.3rem;
+    max-width: 15rem;
+}
+.bubble-CancelHouse1 {
+    font-size: 1.3rem;
+    padding: 1rem 2rem 1.5rem 0.3rem;
+    max-width: 11rem;
+}
+
+.ktzina-CancelHouse {
+    width: 5.5rem;
+}
+
+.bubble-CancelHouse strong {
+    font-family: "yarden-bold";
+}
+
+.cancelHouseRecipeNotes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cancelHouseRecipeNote1 {
+ width: 12rem;
+}
+.cancelHouseRecipeNote2 {
+ width: 15rem;
+}
+
+.cancelHouseRecipe {
+    width: 24rem;
+}
+

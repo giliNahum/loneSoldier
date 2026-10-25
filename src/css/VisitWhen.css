@@ -1,0 +1,103 @@
+
+
+.VisitWhen-jars-wrapper {
+    position: relative;
+    width: 40rem;
+    margin: 1.25rem auto 0;
+}
+
+.VisitWhen-jars-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.VisitWhen-jars-texts {
+    position: absolute;
+    inset: 0;
+}
+
+.VisitWhen-jar-text {
+    position: absolute;
+
+    width: 9rem;
+    min-height: 4.5rem;
+
+    padding: 0.25rem;
+
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: center;
+
+    color: white;
+    -webkit-text-stroke: 0.5px #000000;
+    font-family: "yarden-bold";
+
+    direction: rtl;
+
+    transition:
+        transform 0.2s ease,
+        font-weight 0.2s ease;
+}
+
+.VisitWhen-jar-text.active {
+    font-family: "yarden";
+    font-weight: 500;
+    -webkit-text-stroke: 0.7px #000000;
+}
+
+.VisitWhen-jar-text:hover {
+    transform: scale(1.04);
+}
+
+/* שורה עליונה */
+.VisitWhen-jar-1 {
+    top: 3rem;
+    left: 1.6rem;
+}
+
+.VisitWhen-jar-2 {
+    top: 3rem;
+    left: 11rem;
+}
+
+.VisitWhen-jar-3 {
+    top: 3rem;
+    left: 20.2rem;
+}
+
+.VisitWhen-jar-4 {
+    top: 3rem;
+    left: 29.5rem;
+}
+.VisitWhen-jar-4.active {
+    top: 2.3rem;
+}
+
+/* שורה תחתונה */
+.VisitWhen-jar-5 {
+    top: 17rem;
+    left: 5.2rem;
+}
+
+.VisitWhen-jar-6 {
+    top: 17rem;
+    left: 15.5rem;
+}
+
+.VisitWhen-jar-7 {
+    top: 17rem;
+    left: 25.5rem;
+}
+
+.VisitWhen-jar-7.active {
+    top: 16.5rem;
+    left: 25rem;
+    width: 10rem;
+}

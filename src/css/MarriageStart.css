@@ -1,0 +1,79 @@
+.MarriageStartImg {
+    width: 51rem;
+    margin-top: 4rem;
+}
+
+.MarriageStart-text {
+    position: relative;
+    bottom: 22rem;
+    color: #032057;
+    font-size: 1.5rem;
+    max-width: 30rem;
+    white-space: normal;
+    margin-inline: auto;
+}
+
+.MarriageStart-cards-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.8rem;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.MarriageStart-card {
+    width: 14rem;
+    min-height: 4.8rem;
+    padding: 0.7rem 0.75rem;
+
+    border-radius: 0.65rem;
+    background-color: #90B2F4;
+    color: #032057;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: hidden;
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.MarriageStart-card:hover {
+    transform: translateY(-0.2rem);
+    box-shadow: 0 0.35rem 0.8rem rgba(67, 26, 5, 0.2);
+}
+
+.MarriageStart-card-img {
+    width: 2.7rem;
+    /* height: 2.7rem; */
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.MarriageStart-card-text {
+    max-height: 0;
+    margin-top: 0;
+
+    opacity: 0;
+    overflow: hidden;
+
+    font-size: 1.5rem;
+    line-height: 1.3;
+    text-align: center;
+
+    transition:
+        max-height 0.4s ease,
+        opacity 0.3s ease,
+        margin-top 0.4s ease;
+}
+
+.MarriageStart-card-active .MarriageStart-card-text {
+    max-height: 20rem;
+    margin-top: 0.5rem;
+    opacity: 1;
+}

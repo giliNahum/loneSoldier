@@ -1,0 +1,323 @@
+.Practice {
+    box-sizing: border-box;
+
+    width: 100%;
+    min-height: 45rem;
+
+    /* padding: 6rem 4rem 3rem; */
+
+
+    direction: rtl;
+    overflow: hidden;
+}
+
+.practice-instruction {
+    margin: 6rem auto 2rem;
+
+    font-size: 1.15rem;
+    font-weight: 500;
+    text-align: center;
+
+    color: #fff8d4;
+}
+
+/* =========================
+     שלוש התיבות
+  ========================= */
+
+.practice-categories {
+    direction: ltr;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(12rem, 1fr) minmax(12rem, 1fr) minmax(12rem, 1fr);
+
+    grid-template-areas:
+        "housing financial related";
+
+    gap: 1.4rem;
+
+    width: min(46rem, calc(100% - 4rem));
+    margin: 0 auto;
+}
+
+.practice-category {
+    direction: rtl;
+
+    position: relative;
+
+    min-height: 20.5rem;
+
+    padding: 4.5rem 1rem 1.25rem;
+
+    box-sizing: border-box;
+
+    background-color: #f5f4c8;
+    border-radius: 0.35rem;
+}
+
+.practice-category--housing {
+    grid-area: housing;
+}
+
+.practice-category--financial {
+    grid-area: financial;
+}
+
+.practice-category--related {
+    grid-area: related;
+}
+
+.practice-category-title {
+    position: absolute;
+
+    top: 0.3rem;
+    left: 50%;
+
+    width: 7.3rem;
+    height: 4.2rem;
+
+    object-fit: contain;
+
+    transform: translateX(-50%);
+
+    user-select: none;
+    pointer-events: none;
+}
+
+.practice-category-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 0.55rem;
+
+    width: 100%;
+}
+
+/* =========================
+     ההטבות
+  ========================= */
+
+.practice-benefit {
+    box-sizing: border-box;
+
+    width: fit-content;
+    max-width: 100%;
+
+    font-size: 1rem;
+    line-height: 1.25;
+    text-align: center;
+
+    transition:
+        color 0.2s ease,
+        opacity 0.2s ease,
+        transform 0.2s ease;
+
+    user-select: none;
+}
+
+.practice-benefit--bank {
+    color: #330067;
+
+    cursor: grab;
+}
+
+.practice-benefit--bank:active {
+    cursor: grabbing;
+    transform: scale(1.04);
+}
+
+.practice-benefit--correct {
+    color: #330067;
+}
+
+.practice-benefit--wrong {
+    color: #ec2828;
+
+    animation: practiceWrongAnswer 0.25s ease;
+}
+
+@keyframes practiceWrongAnswer {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* =========================
+   מחסן ההטבות
+========================= */
+
+.practice-bank {
+    width: min(38rem, calc(100% - 2rem));
+    margin: 0.8rem auto 0;
+
+    overflow: hidden;
+
+    background-color: #dec4fa;
+    border-radius: 0.3rem;
+}
+
+.practice-bank-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 1.8rem;
+
+    background-color: #330067;
+
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.practice-bank-content {
+    display: grid;
+
+    /* 4 טורים = פחות גובה */
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    justify-items: center;
+    align-items: center;
+
+    column-gap: 0.45rem;
+    row-gap: 0.2rem;
+
+    width: 100%;
+
+    padding: 0.4rem 0.6rem 0.5rem;
+
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+.practice-benefit--bank {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 1.45rem;
+
+    padding: 0 0.1rem;
+
+    box-sizing: border-box;
+
+    color: #330067;
+
+    /* אותו גודל טקסט */
+    font-size: 1rem;
+    line-height: 1.15;
+    text-align: center;
+
+    cursor: grab;
+}
+
+.practice-benefit--selected {
+    background-color: #330067;
+    color: #ffffff;
+
+    padding: 0.25rem 0.45rem;
+
+    border-radius: 0.3rem;
+
+    transform: scale(1.03);
+}
+
+/* =========================
+     רספונסיביות
+  ========================= */
+
+@media (max-width: 64rem) {
+    .Practice {
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+    }
+
+    .practice-categories {
+        width: min(44rem, calc(100% - 2rem));
+        gap: 1rem;
+    }
+
+    .practice-category {
+        min-height: 19rem;
+    }
+
+    .practice-bank {
+        width: min(34rem, calc(100% - 4rem));
+    }
+}
+
+@media (max-width: 48rem) {
+    .Practice {
+        padding-top: 5rem;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+
+        overflow-y: auto;
+    }
+
+    .practice-categories {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "related"
+            "financial"
+            "housing";
+
+        width: min(25rem, calc(100% - 2rem));
+    }
+
+    .practice-category {
+        min-height: 14rem;
+    }
+
+    .practice-bank {
+        width: min(25rem, calc(100% - 2rem));
+    }
+
+    .practice-bank-content {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 32rem) {
+    .Practice {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .practice-instruction {
+        font-size: 1rem;
+    }
+
+    .practice-category {
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+    }
+
+    .practice-benefit {
+        font-size: 0.9rem;
+    }
+
+    .practice-bank-content {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-height: 600px) {
+    .practice-instruction {
+        margin: 4rem auto 1rem;
+    }
+}
+

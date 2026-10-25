@@ -1,0 +1,79 @@
+.ReleasedBenefits-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ReleasedBenefits-popup {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ReleasedBenefits-open-drawer {
+    width: 30rem;
+}
+
+.ReleasedBenefits-drawer-text {
+    position: absolute;
+
+    width: 20rem;
+    font-size: 1.5rem;
+    color: #F0F0C9;
+    text-align: center;
+    direction: rtl;
+
+    top: 3rem;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+.ReleasedDrawersSvg-drawer {
+    cursor: pointer;
+}
+
+
+.ReleasedBenefits-text {
+    color: #032057;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.ReleasedBenefits-close {
+    position: absolute;
+    top: -0.5rem;
+    right: 4rem;
+
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #F0F0C9;
+
+    font-family: "yarden-bold";
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1;
+
+    cursor: pointer;
+    transition: transform 0.25s ease;
+}
+
+.ReleasedBenefits-close:hover {
+    transform: scale(1.15);
+}
+
+.ReleasedBenefits-close:active {
+    transform: scale(0.98);
+}
+
+.ReleasedBenefits-instruction {
+    margin-top: 6rem;
+    color: #032057;
+    font-size: 1.3rem;
+}
+
+.ReleasedDrawersSvg {
+    width: 40rem;
+}

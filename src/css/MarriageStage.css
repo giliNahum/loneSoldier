@@ -1,0 +1,18 @@
+.MarriageBooksSvg-book {
+    cursor: pointer;
+}
+
+.MarriageStage-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+
+.marriage-stage-main-book {
+    width: 18rem;
+}
+
+.MarriageBooksSvg {
+    width: 20rem;
+}

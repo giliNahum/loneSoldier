@@ -1,0 +1,42 @@
+.SpecialFundFlight-text {
+    background-image: url(../assets/images/SpecialFundFlight-img.svg);
+    background-size: 100% 100%;
+    font-size: 1.5rem;
+    padding: 7rem 4rem 3rem 4rem;
+    color: #502009;
+    margin: 2rem 0rem 1rem;
+}
+
+.SpecialFundFlight-note {
+    font-size: 1.5rem;
+    color: #502009;
+    max-width: 60%;
+    width: 40rem;
+    margin-inline: auto;
+}
+
+.bubble-SpecialFundFlight {
+    font-size: 1.5rem;
+    padding: 2rem 4rem 3rem 2rem;
+    max-width: 20rem;
+}
+
+.ktzina-bubble-SpecialFundFlight {
+    margin-inline: auto;
+    width: fit-content;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.SpecialFundFlight-note--page1 {
+    color: #F0F0C9;
+    width: 45rem;
+}
+
+.flightApprove {
+    max-width: 30rem;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}

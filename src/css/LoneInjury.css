@@ -1,0 +1,124 @@
+.LoneInjury-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0rem 4rem;
+    width: fit-content;
+    margin-inline: auto;
+    gap: 3rem;
+}
+
+.LoneInjury-note {
+    color: #502009;
+    font-size: 1.7rem;
+    max-width: 70%;
+    margin-inline: auto;
+}
+
+.LoneInjury-text {
+    color: #502009;
+    font-size: 1.7rem;
+    max-width: 35rem;
+}
+
+.LoneInjury-text p {
+    margin-bottom: 2rem;
+}
+
+.miaInjury {
+    max-width: 27rem;
+    border-radius: 10px;
+}
+
+.LoneInjury-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    direction: rtl;
+}
+
+.LoneInjury-card {
+    position: relative;
+
+    width: 13rem;
+    height: 9rem;
+
+    padding: 0;
+    border: none;
+    background: transparent;
+
+    perspective: 70rem;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.LoneInjury-card-inner {
+    position: relative;
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+
+    transition: transform 0.55s ease;
+    will-change: transform;
+}
+
+.LoneInjury-card-face {
+    position: absolute;
+    inset: 0;
+
+    box-sizing: border-box;
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0.3rem;
+    background-color: #f3f3c8;
+    color: #502009;
+
+    font-size: 1.1rem;
+    line-height: 1.35;
+    text-align: center;
+
+    overflow: hidden;
+
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+/* הצד שרואים בהתחלה */
+.LoneInjury-card-front {
+    transform: rotateY(0deg);
+    z-index: 2;
+
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* הצד שמסתתר מאחור */
+.LoneInjury-card-back {
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+/* מחשב – מתהפך רק ב-hover */
+@media (hover: hover) and (pointer: fine) {
+    .LoneInjury-card:hover .LoneInjury-card-inner {
+        transform: rotateY(180deg);
+    }
+}
+
+/* טלפון וטאבלט – מתהפך לפי ה-class שמתווסף בלחיצה */
+@media (hover: none),
+(pointer: coarse) {
+    .LoneInjury-card--flipped .LoneInjury-card-inner {
+        transform: rotateY(180deg);
+    }
+}

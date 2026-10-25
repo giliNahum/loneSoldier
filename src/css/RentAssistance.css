@@ -1,0 +1,29 @@
+.RentAssistance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.RentAssistance-eggs {
+    background-image: url("../assets/images/RentAssistance-eggs.png");
+    background-size: 100% 100%;
+    width: 28rem;
+    padding: 3rem 3rem 2rem;
+    color: #502009;
+    font-size: 1.7rem;
+    margin-top: 6rem;
+}
+
+.RentAssistance-eggs-bold {
+    margin-top: 2.5rem;
+    font-family: "yarden-bold";
+    font-size: 1.9rem;
+    -webkit-text-stroke: 0.2px #fff1b8;
+}
+
+.RentAssistance-text {
+    color: #502009;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    width: 45rem;
+}

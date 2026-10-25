@@ -1,0 +1,39 @@
+.HouseAppealsvg-1 {
+    fill: none;
+  }
+  
+  .HouseAppealsvg-2 {
+    font-family: "yarden";
+    font-size: 27px;
+    fill: #f0f0c9;
+  
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .HouseAppealsvg-3 {
+    fill: #f0f0c900;
+    stroke: #fe0000;
+    stroke-width: 4px;
+  
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  .HouseAppealsvg-circle {
+    cursor: pointer;
+  }
+  
+  .HouseAppealsvg-hidden {
+    opacity: 0;
+  }
+  
+  .HouseAppealsvg-visible {
+    opacity: 1;
+  }
+  
+  .HouseAppealsvg {
+    width: 50rem;
+    margin-top: 3rem;
+  }

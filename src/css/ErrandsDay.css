@@ -1,0 +1,136 @@
+.ErrandsDay {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/* כל חפץ */
+.ErrandsDay-item {
+    position: absolute;
+
+    padding: 0;
+    border: none;
+    background: transparent;
+
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* התמונה תופסת את כל המידות של הכפתור */
+.ErrandsDay-item-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    transition:
+        transform 0.25s ease,
+        filter 0.25s ease;
+}
+
+.ErrandsDay-item:hover .ErrandsDay-item-image {
+    transform: scale(1.04);
+    filter: brightness(1.05);
+}
+
+/* הטקסט יושב בדיוק על שטח התמונה */
+.ErrandsDay-item-text {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+    padding: 0.7rem;
+
+    background-color: #f0f0c9c2;
+    color: #502009;
+    border-radius: 10px;
+
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.25;
+    text-align: center;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.9);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease,
+        visibility 0.3s ease;
+}
+
+/* אחרי שלחצו */
+.ErrandsDay-item--opened .ErrandsDay-item-text {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.ErrandsDay-item-text strong {
+    font-weight: 800;
+}
+
+/* המיקומים והגדלים של החפצים */
+.ErrandsDay-item--picture {
+    top: 24%;
+    left: 15%;
+    width: 23%;
+    height: 24%;
+}
+
+.ErrandsDay-item--lamp {
+    top: 21%;
+    right: 24%;
+    width: 13%;
+    height: 23%;
+}
+
+.ErrandsDay-item--right-plant {
+    top: 43%;
+    right: 7%;
+    width: 17%;
+    height: 24%;
+}
+
+.ErrandsDay-item--book {
+    right: 19%;
+    bottom: 8%;
+    width: 17%;
+    height: 24%;
+}
+
+.ErrandsDay-item--left-plant {
+    left: 17%;
+    bottom: 9%;
+    width: 14%;
+    height: 28%;
+}
+
+/* העגלה שבמרכז */
+.ErrandsDay-cart {
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 27%;
+    max-height: 45%;
+    object-fit: contain;
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+.ErrandsDay-note {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
